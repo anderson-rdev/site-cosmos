@@ -1,0 +1,168 @@
+:root {
+  --preto: #050810;
+  --azul-escuro: #0a0f2e;
+  --azul-medio: #0d1f5c;
+  --azul-neon: #1a6fff;
+  --ciano: #00e5ff;
+  --roxo: #7c3aed;
+  --roxo-claro: #a78bfa;
+  --branco: #e8eeff;
+  --cinza-suave: #b0bde8;
+  --ouro: #f5c842;
+}
+
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+body{
+background:var(--preto);
+color:var(--branco);
+font-family:'Exo 2',sans-serif;
+line-height:1.7;
+}
+
+header{
+background:linear-gradient(160deg,var(--azul-escuro),var(--roxo));
+padding:3rem;
+text-align:center;
+border-bottom:2px solid var(--ciano);
+}
+
+.logo-linha{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:1rem;
+}
+
+#titulo-principal{
+font-family:'Orbitron',sans-serif;
+font-weight:900;
+font-size:3rem;
+background:linear-gradient(90deg,var(--ciano),var(--roxo-claro),var(--ouro));
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+#subtitulo-destaque{
+font-family:'Orbitron';
+background:var(--azul-neon);
+padding:.4rem 1rem;
+display:inline-block;
+margin-top:.5rem;
+}
+
+nav{
+margin-top:1.5rem;
+display:flex;
+justify-content:center;
+gap:2rem;
+}
+
+nav a{
+color:var(--ciano);
+text-decoration:none;
+font-family:'Orbitron';
+font-size:.8rem;
+}
+
+main{
+max-width:1100px;
+margin:auto;
+padding:3rem 1.5rem;
+}
+
+.titulo-secao{
+font-family:'Orbitron';
+color:var(--ciano);
+margin-bottom:1rem;
+font-size:1.8rem;
+}
+
+.texto-corpo{
+color:var(--cinza-suave);
+margin-bottom:1rem;
+max-width:70ch;
+}
+
+.div-intro{
+background:rgba(10,15,46,.9);
+border:1px solid rgba(0,229,255,.2);
+border-radius:12px;
+padding:2rem;
+margin-bottom:3rem;
+}
+
+.div-cards-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:1.5rem;
+}
+
+.card{
+background:rgba(13,31,92,.8);
+border:1px solid rgba(0,229,255,.3);
+border-radius:12px;
+padding:1.5rem;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+box-shadow:0 15px 40px rgba(0,229,255,.2);
+}
+
+.card-icone{
+font-size:2rem;
+display:block;
+margin-bottom:.5rem;
+}
+
+.div-curiosidades{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:1rem;
+margin-top:2rem;
+}
+
+.curiosidade-box{
+background:rgba(26,111,255,.15);
+border:1px solid rgba(0,229,255,.3);
+border-radius:10px;
+padding:1.5rem;
+text-align:center;
+}
+
+.curiosidade-numero{
+font-family:'Orbitron';
+font-size:2rem;
+color:var(--ciano);
+display:block;
+}
+
+.footer-texto{
+color:var(--cinza-suave);
+font-size:.8rem;
+}
+
+footer{
+background:var(--azul-escuro);
+text-align:center;
+padding:2rem;
+margin-top:3rem;
+}
+
+.footer-links{
+margin-top:1rem;
+display:flex;
+justify-content:center;
+gap:1.5rem;
+}
+
+.footer-links a{
+color:var(--roxo-claro);
+text-decoration:none;
+}
